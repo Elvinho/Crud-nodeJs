@@ -1,0 +1,22 @@
+    <button><a href="/">Voltar</a></button>
+<table>
+    <tr>
+        <td>Action</td>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    {{#data}}
+        <tr>
+            <td>
+                <a href="deletar/{{id}}" class="deletar"><img src="../img/lixeira.png" alt="" width="20px" height="20px"></a>
+                <a href="editar/{{id}}" class="editar"><img src="../img/editar.png" alt="" width="20px" height="20px"> </a>
+                <a href="inserir" class="inserir"><img src="../img/adicionar.png" alt="" width="20px" height="20px"> </a>
+            </td>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+        </tr>
+    {{/data}}
+
+</table>
